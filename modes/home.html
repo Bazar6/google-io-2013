@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>IO</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/vendor/modernizr-latest.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/vendor/jquery-1.6.2.js"></script>
+    <script src="../js/vendor/Tween.js"></script>
+    <script src="../js/vendor/paper.js"></script>
+    <script src="../js/vendor/physics.js"></script>
+    <script src="../js/vendor/tuna.js"></script>
+    <script src="../js/app.min.js"></script>
+  </head>
+  <body>
+    <div class="bounds"></div>
+
+    <div id="group-sliders">
+      <label id="points-label" for="pan">Points</label>
+      <input id="points" type="range" value="6" min="3" max="24" />
+
+      <label id="bounce-label" for="pan">Bounce distance</label>
+      <input id="bounce" type="range" value="1" min="1" max="10" />
+    </div>
+
+    <div id="group-checks">
+      <input id="smooth-paths" type="checkbox" checked="true" />
+      <label for="smooth-paths">Smooth Paths</label>
+      <br />
+      <input id="show-points" type="checkbox" />
+      <label for="show-points">Show Points</label>
+
+      <input id="fill-shapes" type="checkbox" checked="true" />
+      <label for="fill-shapes">Fill Shapes</label>
+    </div>
+  </body>
+</html>

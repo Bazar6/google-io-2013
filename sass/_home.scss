@@ -1,0 +1,26 @@
+label {
+  font: 12px/22px "Arial";
+}
+
+#group-sliders,
+#group-checks {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  padding: 10px 20px;
+}
+
+#group-sliders label {
+  display: block;
+}
+
+#group-sliders input {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#group-checks {
+  left: auto;
+  right: 0;
+}
