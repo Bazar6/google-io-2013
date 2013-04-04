@@ -105,9 +105,9 @@ def lint_js
 end
 
 def build_js
-  debug_flag = %Q{--define='DEBUG_MODE=false'}
+  debug_flag = %Q{--define='DEBUG_MODE=true'}
 
-  `vendor/closure-library-20121212-r2367/closure/bin/build/closurebuilder.py --root=vendor/closure-library-20121212-r2367/ --root=js/ --namespace="ww.app" --output_mode=compiled --compiler_flags="--externs='vendor/externs/jquery-1.6.js'" --compiler_flags="--externs='vendor/externs/tuna.js'" --compiler_flags="--externs='vendor/externs/audio.js'" --compiler_flags="--externs='vendor/externs/Physics.js'" --compiler_flags="--externs='vendor/externs/modernizr.js'" --compiler_flags="--externs='vendor/externs/Tween.js'" --compiler_flags="--compilation_level=ADVANCED_OPTIMIZATIONS" --compiler_flags="#{debug_flag}" --compiler_flags="--debug=false" --compiler_flags="--define='goog.ENABLE_DEBUG_LOADER=false'" --compiler_flags="--define='goog.DEBUG=false'" --compiler_jar=vendor/compiler-latest/compiler.jar --output_file=js/app.min.js`
+  `vendor/closure-library-20121212-r2367/closure/bin/build/closurebuilder.py --root=vendor/closure-library-20121212-r2367/ --root=js/ --namespace="ww.app" --output_mode=compiled --compiler_flags="--externs='vendor/externs/jquery-1.6.js'" --compiler_flags="--externs='vendor/externs/tuna.js'" --compiler_flags="--externs='vendor/externs/audio.js'" --compiler_flags="--externs='vendor/externs/Physics.js'" --compiler_flags="--externs='vendor/externs/modernizr.js'" --compiler_flags="--externs='vendor/externs/Tween.js'" --compiler_flags="--compilation_level=ADVANCED_OPTIMIZATIONS" --compiler_flags="#{debug_flag}" --compiler_flags="--debug=true" --compiler_flags="--define='goog.ENABLE_DEBUG_LOADER=false'" --compiler_flags="--define='goog.DEBUG=false'" --compiler_jar=vendor/compiler-latest/compiler.jar --output_file=js/app.min.js`
 end
 
 def build_js_test
